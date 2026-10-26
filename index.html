@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav> 
+    <a href="#home">HOME</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+
+<section id="home" class="hero">
+    <h1>HRU Tech Solutions</h1>
+
+    <h2>Your Trusted Technology Partner</h2>
+
+    <p>
+        Professional IT Support, Networking,
+        Fiber Optics, and Engineering Services.
+    </p>
+
+    <a href="#contact" class="btn">
+        Contact Us
+    </a>
+    
+<button class="btn" onclick="welcomeMessage()">
+    Click Me
+</button>
+
+    
+</section>
+
+
+<section id="about">
+    <h2>about us</h2>
+    <p>we provide professional technology services.</p>
+    
+<img
+    src="images/network.jpg"
+    alt="Computer networking equipment"
+    class="about-image"
+>
+
+</section>
+
+
+<section id="services">
+    <h2>Our Services</h2>
+    <p>Professional technology solutions</p>
+
+     <button class="btn" onclick="toggleServices()">
+        Show / Hide Services
+    </button>
+
+    <div class="service-container" id="serviceList">
+        
+        <div class="service-card">
+            <h3>IT Support</h3>
+            <p>Computer repair and troubleshooting.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Networking</h3>
+            <p>LAN, WAN, and network installation.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Fiber Optics</h3>
+            <p>Fiber splicing and OTDR testing.</p>
+        </div>
+
+    </div>
+
+</section>
+
+    
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Send us a message!</p>
+
+    <form id="contactForm">
+        <input
+            type="text"
+            id="name"
+            placeholder="Your Name"
+            required
+        >
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Your Email"
+            required
+        >
+
+        <textarea
+            id="message"
+            placeholder="Your Message"
+            required
+        ></textarea>
+
+        <button type="submit" class="btn">
+            Send Message
+        </button>
+    </form>
+
+    <p id="formStatus" role="status"></p>
+</section>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
