@@ -4,7 +4,7 @@ function welcomeMessage() {
 }
 
 function toggleServices() {
-    let services = document.getElementById("serviceList");
+    const services = document.getElementById("serviceList");
 
     if (services.style.display === "none") {
         services.style.display = "flex";

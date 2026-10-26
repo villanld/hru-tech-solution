@@ -171,3 +171,92 @@ p {
     font-weight: bold;
 }
 
+
+/* Mobile and tablet responsiveness */
+
+@media (max-width: 768px) {
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        padding: 15px;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 85%;
+        max-width: 300px;
+        box-sizing: border-box;
+    }
+
+    #contactForm {
+        width: 90%;
+    }
+}
+
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+    width: 90%;
+    margin: 30px auto;
+    text-align: left;
+}
+
+#contactForm label {
+    font-weight: bold;
+    color: #154360;
+}
+
+#contactForm input,
+#contactForm select,
+#contactForm textarea {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#contactForm textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+#contactForm button {
+    cursor: pointer;
+    border: none;
+    align-self: center;
+}
+
